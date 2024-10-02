@@ -1,0 +1,12 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $body_font_size;
+    background-color: $body_bg_color;
+}
