@@ -6,7 +6,94 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-size: $body_font_size;
     background-color: $body_bg_color;
+
+    nav {
+        padding: 1rem;
+        height: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        .logo {
+            height: inherit;
+            width: 30rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            width: 45rem;
+            height: inherit;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+            a {
+                font-family: $nav_link_font_family;
+                text-decoration: none;
+                color: $footer_bg_color;
+            }
+        }
+    }
+
+    .get_started_container {
+        height: 45rem;
+        padding: 0rem 7rem;
+        width: inherit;
+        display: flex;
+        justify-content: space-between;
+        font-family: $get_started_font_family;
+
+        .content_area {
+            width: 65rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2.5rem;
+        
+            h2 {
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+                width: 50rem;
+            }
+
+            .input_area {
+                display: flex;
+                gap: 1.5rem;
+                height: 4rem;
+                
+                input {
+                    padding: .8rem;
+                    height: inherit;
+                    width: 25rem;
+                }
+
+                button {
+                    cursor: pointer;
+                    background-color: $get_started_btn_bg_color;
+                    color: hsl(0, 0, 100%);
+                    border: none;
+                    height: inherit;   
+                    width: 18rem;
+                    border-radius: .5rem; 
+                }
+            }
+        }
+    
+        img {
+            height: inherit;
+        }
+    }
 }
