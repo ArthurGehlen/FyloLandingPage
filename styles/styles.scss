@@ -47,7 +47,7 @@ body {
 
     .get_started_container {
         height: 45rem;
-        padding: 0rem 7rem;
+        padding: 0rem 8rem;
         width: inherit;
         display: flex;
         justify-content: space-between;
@@ -88,12 +88,31 @@ body {
                     height: inherit;   
                     width: 18rem;
                     border-radius: .5rem; 
+                
+                    &:hover {
+                        background-color: $get_started_btn_bg_color_hover;
+                    }
                 }
             }
         }
     
         img {
             height: inherit;
+        }
+    }
+
+    .stay_productive {
+        background-color: $stay_productive_bg_color;
+        height: 40rem;
+        width: inherit;
+
+        .divisor {
+            transform: rotate(180deg);
+            width: 100%;
+        }
+
+        .content {
+            display: flex;
         }
     }
 }
